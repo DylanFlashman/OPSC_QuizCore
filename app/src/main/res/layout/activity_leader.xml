@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LeaderActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg_colour">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/weeklyButton"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.333"
+                    android:background="@drawable/blue_bg"
+                    android:text="Weekly"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/monthlyButton"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0.333"
+                    android:background="@drawable/white_bg"
+                    android:text="Monthly"
+                    android:textColor="@color/navy_blue" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/allTimeButton"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.333"
+                    android:background="@drawable/white_bg"
+                    android:text="All Time"
+                    android:textColor="@color/navy_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/pic3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.7"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            app:strokeColor="#AC844E"
+                            app:strokeWidth="3dp" />
+
+                        <TextView
+                            android:id="@+id/tvThird"
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:background="@drawable/circle_top3"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/pic3"
+                            app:layout_constraintEnd_toEndOf="@+id/pic3"
+                            app:layout_constraintStart_toStartOf="@+id/pic3"
+                            app:layout_constraintTop_toBottomOf="@+id/pic3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tvTitleTop3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="title"
+                        android:textAlignment="center"
+                        android:textColor="@color/navy_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/pic1"
+                            android:layout_width="137dp"
+                            android:layout_height="137dp"
+                            android:padding="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            app:strokeColor="#febb3a"
+                            app:strokeWidth="3dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-2dp"
+                            app:layout_constraintBottom_toTopOf="@+id/pic1"
+                            app:layout_constraintEnd_toEndOf="@+id/pic1"
+                            app:layout_constraintStart_toStartOf="@+id/pic1"
+                            app:srcCompat="@drawable/crown" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/circle_top1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/pic1"
+                            app:layout_constraintEnd_toEndOf="@+id/pic1"
+                            app:layout_constraintStart_toStartOf="@+id/pic1"
+                            app:layout_constraintTop_toBottomOf="@+id/pic1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tvTitleTop1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="title"
+                        android:textAlignment="center"
+                        android:textColor="@color/navy_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.333"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/pic2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="2dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.7"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            app:strokeColor="#BFBFC0"
+                            app:strokeWidth="3dp" />
+
+                        <TextView
+                            android:id="@+id/tvSecond"
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:background="@drawable/circle_top2"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/pic2"
+                            app:layout_constraintEnd_toEndOf="@+id/pic2"
+                            app:layout_constraintStart_toStartOf="@+id/pic2"
+                            app:layout_constraintTop_toBottomOf="@+id/pic2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tvTitleTop2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="title"
+                        android:textAlignment="center"
+                        android:textColor="@color/navy_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scoreText1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/score_bg1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    app:srcCompat="@drawable/garnet" />
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="0000"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/leaderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="80dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bottom_background"
+        android:padding="4dp"
+        app:cnb_backgroundColor="@color/blue"
+        app:cnb_iconColor="@color/blue"
+        app:cnb_iconSize="20dp"
+        app:cnb_menuResource="@menu/bottom_menu"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="50dp"
+        app:cnb_unselectedColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
